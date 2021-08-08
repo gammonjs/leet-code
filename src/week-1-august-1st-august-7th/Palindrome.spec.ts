@@ -1,6 +1,6 @@
 import { isPalindrome, combinationsOf, minCut } from './Palindrome';
 
-describe('function partitions', () => {
+describe('function partitions returns a list of partitions in which each partition only contains valid palindromes', () => {
     it('should slice "abcd" zero times correctly', () => {
         // arrange
         const expected: Array<Array<string>> = [];
@@ -149,6 +149,8 @@ describe('function minCut', () => {
         // assert
         expect(actual).toEqual(expected);
     });
+
+    // the following test times out
 
     // it('should resolve "fifgbeajcacehiicccfecbfhhgfiiecdcjjffbghdidbhbdbfbfjccgbbdcjheccfbhafehieabbdfeigbiaggchaeghaijfbjhi" to 0', () => {
     //     // arrange
