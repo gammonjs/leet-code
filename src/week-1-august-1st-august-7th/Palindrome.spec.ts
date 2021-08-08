@@ -1,5 +1,4 @@
-import { isPalindrome, combinationsOf, minCut } from "./Palindrome"
-
+import { isPalindrome, combinationsOf, minCut } from './Palindrome';
 
 describe('function partitions', () => {
     it('should slice "abcd" zero times correctly', () => {
@@ -7,10 +6,10 @@ describe('function partitions', () => {
         const expected: Array<Array<string>> = [];
 
         // act
-        const actual = combinationsOf("abcd", 0);
+        const actual = combinationsOf('abcd', 0);
 
         // assert
-        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected))
+        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected));
     });
 
     it('should slice "abcd" one time correctly', () => {
@@ -18,10 +17,10 @@ describe('function partitions', () => {
         const expected: Array<Array<string>> = [];
 
         // act
-        const actual = combinationsOf("abcd", 1);
+        const actual = combinationsOf('abcd', 1);
 
         // assert
-        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected))
+        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected));
     });
 
     it('should slice "abcd" two times correctly', () => {
@@ -29,35 +28,34 @@ describe('function partitions', () => {
         const expected: Array<Array<string>> = [];
 
         // act
-        const actual = combinationsOf("abcd", 2);
+        const actual = combinationsOf('abcd', 2);
 
         // assert
-        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected))
+        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected));
     });
 
     it('should slice "abcd" three times correctly', () => {
         // arrange
-        const expected = [["a","b","c","d"]];
+        const expected = [['a', 'b', 'c', 'd']];
 
         // act
-        const actual = combinationsOf("abcd", 3);
+        const actual = combinationsOf('abcd', 3);
 
         // assert
-        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected))
+        expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected));
     });
 });
 
 describe('function isPalindrome', () => {
-
     it('should return false for strings of length 0', () => {
         // arrange
         const expected = false;
 
         // act
-        const actual = isPalindrome("");
+        const actual = isPalindrome('');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should return true for strings of length 1', () => {
@@ -65,10 +63,10 @@ describe('function isPalindrome', () => {
         const expected = true;
 
         // act
-        const actual = isPalindrome("a");
+        const actual = isPalindrome('a');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should return true for "aa"', () => {
@@ -76,10 +74,10 @@ describe('function isPalindrome', () => {
         const expected = true;
 
         // act
-        const actual = isPalindrome("aa");
+        const actual = isPalindrome('aa');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should return false for "ab"', () => {
@@ -87,10 +85,10 @@ describe('function isPalindrome', () => {
         const expected = false;
 
         // act
-        const actual = isPalindrome("ab");
+        const actual = isPalindrome('ab');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 });
 
@@ -100,10 +98,10 @@ describe('function minCut', () => {
         const expected = 0;
 
         // act
-        const actual = minCut("a")
+        const actual = minCut('a');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should resolve "ab" to 1', () => {
@@ -111,10 +109,10 @@ describe('function minCut', () => {
         const expected = 1;
 
         // act
-        const actual = minCut("ab")
+        const actual = minCut('ab');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should resolve "aab" to 1', () => {
@@ -122,10 +120,10 @@ describe('function minCut', () => {
         const expected = 1;
 
         // act
-        const actual = minCut("aab")
+        const actual = minCut('aab');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should resolve "aaabbbccc" to 2', () => {
@@ -133,10 +131,10 @@ describe('function minCut', () => {
         const expected = 2;
 
         // act
-        const actual = minCut("aaabbbccc")
+        const actual = minCut('aaabbbccc');
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     it('should resolve "eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj" to 42', () => {
@@ -144,10 +142,12 @@ describe('function minCut', () => {
         const expected = 42;
 
         // act
-        const actual = minCut("eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj")
+        const actual = minCut(
+            'eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj'
+        );
 
         // assert
-        expect(actual).toEqual(expected)
+        expect(actual).toEqual(expected);
     });
 
     // it('should resolve "fifgbeajcacehiicccfecbfhhgfiiecdcjjffbghdidbhbdbfbfjccgbbdcjheccfbhafehieabbdfeigbiaggchaeghaijfbjhi" to 0', () => {
@@ -160,4 +160,4 @@ describe('function minCut', () => {
     //     // assert
     //     expect(actual).toEqual(expected)
     // });
-})
+});

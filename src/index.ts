@@ -1,40 +1,40 @@
-import { minCut } from "./week1/Palindrome"
+import { minCut } from './week-1-august-1st-august-7th/Palindrome';
 
 const testcases = [
     {
-        input: "aab",
+        input: 'aab',
         output: 1
     },
     {
-        input: "a",
+        input: 'a',
         output: 0
     },
     {
-        input: "ab",
+        input: 'ab',
         output: 1
     },
     {
-        input: "aaabbbccc",
+        input: 'aaabbbccc',
         output: 2
     },
     {
-        input: "aaabbbcccddd",
+        input: 'aaabbbcccddd',
         output: 3
     },
     {
-        input: "aaaaabbbbbcccccdddddeeeee",
+        input: 'aaaaabbbbbcccccdddddeeeee',
         output: 4
     },
     {
-        input: "eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj",
+        input: 'eegiicgaeadbcfacfhifdbiehbgejcaeggcgbahfcajfhjjdgj',
         output: 42
-    },
+    }
     // {
     //     input: "fifgbeajcacehiicccfecbfhhgfiiecdcjjffbghdidbhbdbfbfjccgbbdcjheccfbhafehieabbdfeigbiaggchaeghaijfbjhi",
     //     output: 0
     // }
-] 
+];
 
-testcases.forEach((testcase => {
-    console.log(minCut(testcase.input))
-}))
+testcases.forEach((testcase) => {
+    console.log(minCut(testcase.input));
+});

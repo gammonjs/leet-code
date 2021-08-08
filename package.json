@@ -4,6 +4,7 @@
   "description": "example simple graph example",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
     "test": "tsc && jest",
     "dev": "tsc && node ./dist"
   },
@@ -20,10 +21,14 @@
   "homepage": "https://github.com/gammonjs/graph-example#readme",
   "dependencies": {},
   "devDependencies": {
-    "typedi": "^0.10.0",
-    "typescript": "^4.3.5",
     "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
     "jest": "^27.0.6",
-    "ts-jest": "^27.0.4"
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.4",
+    "typedi": "^0.10.0",
+    "typescript": "^4.3.5"
   }
 }
