@@ -1,6 +1,6 @@
 # LeetCoding Personal Repository
 
-Note: this is all unit test driven, so to "run" the code
+## Note: this is all unit test driven, so to "run" the code
     - npm install
     - npm run test
 
@@ -10,6 +10,7 @@ Note: this is all unit test driven, so to "run" the code
     - Palindrome Partitioning II
 ### [Week 2: August 8th - August 14th](https://leetcode.com/explore/challenge/card/august-leetcoding-challenge-2021/614/week-2-august-8th-august-14th/)
     - Rank Transform of a Matrix
+    - Add Strings
 
 ## [Microsoft Online Assessment Questions](https://leetcode.com/discuss/interview-question/398023/Microsoft-Online-Assessment-Questions)
     - [Min Deletions to Make Frequency of Each Letter Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
